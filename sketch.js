@@ -34,11 +34,12 @@ let playbackRate = 1.0;
 async function setup() {
   createCanvas(400, 400);
   background(noNyan);
-    nyan = await loadSound('media/NyanCat.mp3');
-    noNyan = await loadImage('media/NyanCatless.gif');
+    nyan = await loadSound('medias/nyanCat.mp3');
+    noNyan = await loadImage('medias/nyancatless.gif');
   //added semicolon after nyancatlessgif
   //removed sprinkles load due to not having that in media 
- 
+ //NyanCat to NyanCatless uppercase
+  //changed media to medias file pathway
 }
 
 function draw() {
@@ -72,10 +73,10 @@ function mousePressed() {
     color: color(c[0], c[1], c[2])
   };
   circles.push(newCircle);
-  nayn.setVolume(0.5); 
-  nyan.rate(playbakRate); 
+  nyan.setVolume(0.5); 
+  nyan.rate(playbackRate); 
    nyan.loop();
-  
+  //fixed nyan spelling and playbackrate 
 }
 function mouseReleased(){
   nyan.stop();
