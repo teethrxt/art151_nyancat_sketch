@@ -83,8 +83,8 @@ function mouseReleased(){
 
 
 // added === tp up arrow
-  // capatilized all of down arrow
-  //removed else for down arrow and up arrow and added ===
+// capatilized all of down arrow
+//removed else for down arrow and up arrow and added ===
 function keyPressed() {
   if (keycode === UP_ARROW); { 
     playBackRate += 0.1; 
